@@ -22,8 +22,8 @@ resource "azurerm_app_service_plan" "samplewebapp" {
     size = "S1"  
   }  
 }
-resource "azurerm_app_service" "pythonapp" {  
-  name                = "pythonapp"  
+resource "azurerm_app_service" "ovitpythonapp" {  
+  name                = "ovitpythonapp"  
   location            = "eastus"  
   resource_group_name = azurerm_resource_group.terraformlab.name  
   app_service_plan_id = azurerm_app_service_plan.samplewebapp.id  
